@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="checkoutModalLabel">
-                    <i class="bi bi-cart-check text-primary"></i> Confirm Sale
+                    <i class="bi bi-cart-check text-primary"></i> Confirmar venta
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
