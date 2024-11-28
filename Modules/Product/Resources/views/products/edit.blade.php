@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Product')
+@section('title', 'Editar Producto')
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('products.index') }}">Products</a></li>
-        <li class="breadcrumb-item active">Edit</li>
+        <li class="breadcrumb-item"><a href="{{ route('products.index') }}">Productos</a></li>
+        <li class="breadcrumb-item active">Editar</li>
     </ol>
 @endsection
 
@@ -19,7 +19,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">Update Product <i class="bi bi-check"></i></button>
+                        <button class="btn btn-primary">Actualizar Producto <i class="bi bi-check"></i></button>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -28,13 +28,13 @@
                             <div class="form-row">
                                 <div class="col-md-7">
                                     <div class="form-group">
-                                        <label for="product_name">Product Name <span class="text-danger">*</span></label>
+                                        <label for="product_name">Nombre del Producto <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="product_name" required value="{{ $product->product_name }}">
                                     </div>
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <label for="product_code">Code <span class="text-danger">*</span></label>
+                                        <label for="product_code">Código <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="product_code" required value="{{ $product->product_code }}">
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="category_id">Category <span class="text-danger">*</span></label>
+                                        <label for="category_id">Categoría <span class="text-danger">*</span></label>
                                         <select class="form-control" name="category_id" id="category_id" required>
                                             @foreach(\Modules\Product\Entities\Category::all() as $category)
                                                 <option {{ $category->id == $product->category->id ? 'selected' : '' }} value="{{ $category->id }}">{{ $category->category_name }}</option>
