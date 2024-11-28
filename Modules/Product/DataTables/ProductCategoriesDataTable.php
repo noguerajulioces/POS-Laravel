@@ -37,23 +37,26 @@ class ProductCategoriesDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Imprimir'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Resetearear'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Refrescar')
             );
     }
 
     protected function getColumns() {
         return [
             Column::make('category_code')
+                ->title('Código')
                 ->addClass('text-center'),
 
             Column::make('category_name')
+                ->title('Nombre')
                 ->addClass('text-center'),
 
             Column::make('products_count')
+                ->title('Recuento de Productos')
                 ->addClass('text-center'),
 
             Column::computed('action')

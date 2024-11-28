@@ -39,7 +39,7 @@ class CurrencyDataTable extends DataTable
                 Button::make('print')
                     ->text('<i class="bi bi-printer-fill"></i> Imprimir'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Resetear'),
+                    ->text('<i class="bi bi-x-circle"></i> Resetearear'),
                 Button::make('reload')
                     ->text('<i class="bi bi-arrow-repeat"></i> Refrescar')
             );

@@ -54,11 +54,11 @@ class ProductDataTable extends DataTable
                         Button::make('excel')
                             ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                         Button::make('print')
-                            ->text('<i class="bi bi-printer-fill"></i> Print'),
+                            ->text('<i class="bi bi-printer-fill"></i> Imprimir'),
                         Button::make('reset')
-                            ->text('<i class="bi bi-x-circle"></i> Reset'),
+                            ->text('<i class="bi bi-x-circle"></i> Resetearear'),
                         Button::make('reload')
-                            ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                            ->text('<i class="bi bi-arrow-repeat"></i> Refrescar')
                     );
     }
 
@@ -66,31 +66,31 @@ class ProductDataTable extends DataTable
     {
         return [
             Column::computed('product_image')
-                ->title('Image')
+                ->title('Imagen')
                 ->className('text-center align-middle'),
 
             Column::make('category.category_name')
-                ->title('Category')
+                ->title('Categoría')
                 ->className('text-center align-middle'),
 
             Column::make('product_code')
-                ->title('Code')
+                ->title('Código')
                 ->className('text-center align-middle'),
 
             Column::make('product_name')
-                ->title('Name')
+                ->title('Nombre')
                 ->className('text-center align-middle'),
 
             Column::computed('product_cost')
-                ->title('Cost')
+                ->title('Costo')
                 ->className('text-center align-middle'),
 
             Column::computed('product_price')
-                ->title('Price')
+                ->title('Precio')
                 ->className('text-center align-middle'),
 
             Column::computed('product_quantity')
-                ->title('Quantity')
+                ->title('Cantidad')
                 ->className('text-center align-middle'),
 
             Column::computed('action')

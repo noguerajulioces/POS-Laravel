@@ -86,7 +86,7 @@
                 {extend: 'excel',text: '<i class="bi bi-file-earmark-excel-fill"></i> Excel'},
                 {extend: 'csv',text: '<i class="bi bi-file-earmark-excel-fill"></i> CSV'},
                 {extend: 'print',
-                    text: '<i class="bi bi-printer-fill"></i> Print',
+                    text: '<i class="bi bi-printer-fill"></i> Imprimir',
                     title: "Units",
                     exportOptions: {
                         columns: [ 0, 1, 2, 3, 4 ]

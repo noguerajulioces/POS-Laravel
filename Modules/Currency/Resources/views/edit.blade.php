@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Creaar Moneda')
+@section('title', 'Editar Moneda')
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
