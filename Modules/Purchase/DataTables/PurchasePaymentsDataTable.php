@@ -50,18 +50,23 @@ class PurchasePaymentsDataTable extends DataTable
     protected function getColumns() {
         return [
             Column::make('date')
+                ->title('Fecha')
                 ->className('align-middle text-center'),
 
             Column::make('reference')
+                ->title('Referencia')
                 ->className('align-middle text-center'),
 
             Column::computed('amount')
+                ->title('Monto')
                 ->className('align-middle text-center'),
 
             Column::make('payment_method')
+                ->title('Método de Pago')
                 ->className('align-middle text-center'),
 
             Column::computed('action')
+                ->title('Acciones')
                 ->exportable(false)
                 ->printable(false)
                 ->className('align-middle text-center'),

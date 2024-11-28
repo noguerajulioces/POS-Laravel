@@ -1,13 +1,13 @@
 @if ($data->status == 'Pending')
     <span class="badge badge-info">
-        {{ $data->status }}
+        Pendiente
     </span>
 @elseif ($data->status == 'Ordered')
     <span class="badge badge-primary">
-        {{ $data->status }}
+        Ordenado
     </span>
 @else
     <span class="badge badge-success">
-        {{ $data->status }}
+        Completado
     </span>
 @endif
