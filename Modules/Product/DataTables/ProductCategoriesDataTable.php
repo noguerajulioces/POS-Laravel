@@ -60,6 +60,7 @@ class ProductCategoriesDataTable extends DataTable
                 ->addClass('text-center'),
 
             Column::computed('action')
+                ->title('Acciones')
                 ->exportable(false)
                 ->printable(false)
                 ->addClass('text-center'),

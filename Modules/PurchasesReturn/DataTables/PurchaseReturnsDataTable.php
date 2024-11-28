@@ -63,28 +63,35 @@ class PurchaseReturnsDataTable extends DataTable
     protected function getColumns() {
         return [
             Column::make('reference')
+                ->title('Referencia')
                 ->className('text-center align-middle'),
 
             Column::make('supplier_name')
-                ->title('Supplier')
+                ->title('Proveedor')
                 ->className('text-center align-middle'),
 
             Column::computed('status')
+                ->title('Estado')
                 ->className('text-center align-middle'),
 
             Column::computed('total_amount')
+                ->title('Monto Total')
                 ->className('text-center align-middle'),
 
             Column::computed('paid_amount')
+                ->title('Monto Pagado')
                 ->className('text-center align-middle'),
 
             Column::computed('due_amount')
+                ->title('Valor Adeudado')
                 ->className('text-center align-middle'),
 
             Column::computed('payment_status')
+                ->title('Estado de Pago')
                 ->className('text-center align-middle'),
 
             Column::computed('action')
+                ->title('Acciones')
                 ->exportable(false)
                 ->printable(false)
                 ->className('text-center align-middle'),

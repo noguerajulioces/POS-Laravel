@@ -33,7 +33,7 @@
                                         <option value="sale">Sales</option>
                                         <option value="sale_return">Sale Returns</option>
                                         <option value="purchase">Purchase</option>
-                                        <option value="purchase_return">Purchase Returns</option>
+                                        <option value="purchase_return">Devoluciones de Compra</option>
                                     </select>
                                     @error('payments')
                                     <span class="text-danger mt-1">{{ $message }}</span>
