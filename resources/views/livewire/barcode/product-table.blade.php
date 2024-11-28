@@ -15,8 +15,8 @@
                 <table class="table table-bordered mb-0">
                     <thead>
                     <tr class="align-middle">
-                        <th class="align-middle">Product Name</th>
-                        <th class="align-middle">Code</th>
+                        <th class="align-middle">Nombre de Producto</th>
+                        <th class="align-middle">Código</th>
                         <th class="align-middle">
                             Quantity <i class="bi bi-question-circle-fill text-info" data-toggle="tooltip" data-placement="top" title="Max Quantity: 100"></i>
                         </th>
