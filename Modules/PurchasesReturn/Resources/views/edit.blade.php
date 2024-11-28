@@ -85,7 +85,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="note">Note (If Needed)</label>
+                                <label for="note">Nota (Si es necesario)</label>
                                 <textarea name="note" id="note" rows="5" class="form-control">{{ $purchase_return->note }}</textarea>
                             </div>
 

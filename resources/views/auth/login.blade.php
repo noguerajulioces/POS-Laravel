@@ -68,7 +68,7 @@
                                     Login
                                     <div id="spinner" class="spinner-border text-info" role="status"
                                          style="height: 20px;width: 20px;margin-left: 5px;display: none;">
-                                        <span class="sr-only">Loading...</span>
+                                        <span class="sr-only">Cargando...</span>
                                     </div>
                                 </button>
                             </div>
