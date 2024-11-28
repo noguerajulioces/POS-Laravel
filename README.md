@@ -1,6 +1,5 @@
 # Local Installation
 
-- run `` git clone https://github.com/FahimAnzamDip/triangle-pos.git ``
 - run ``composer install `` 
 - run `` npm install ``
 - run ``npm run dev``
