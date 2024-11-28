@@ -24,10 +24,10 @@
                             <table class="table table-bordered">
                                 <tr>
                                     <th colspan="2">
-                                        Date
+                                        Fecha
                                     </th>
                                     <th colspan="2">
-                                        Reference
+                                        Referencia
                                     </th>
                                 </tr>
                                 <tr>
@@ -53,9 +53,9 @@
                                         <td>{{ $adjustedProduct->quantity }}</td>
                                         <td>
                                             @if($adjustedProduct->type == 'add')
-                                                (+) Addition
+                                                (+) Adición
                                             @else
-                                                (-) Subtraction
+                                                (-) Substracción
                                             @endif
                                         </td>
                                     </tr>

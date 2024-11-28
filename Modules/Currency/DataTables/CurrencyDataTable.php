@@ -37,32 +37,38 @@ class CurrencyDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Imprimir'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Resetear'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Refrescar')
             );
     }
 
     protected function getColumns() {
         return [
             Column::make('currency_name')
+                ->title('Moneda')
                 ->className('text-center align-middle'),
 
             Column::make('code')
+                ->title('Código')
                 ->className('text-center align-middle'),
 
             Column::make('symbol')
+                ->title('Símbolo')
                 ->className('text-center align-middle'),
 
             Column::make('thousand_separator')
+                ->title('Separador de Miles')
                 ->className('text-center align-middle'),
 
             Column::make('decimal_separator')
+                ->title('Separador de Decimales')
                 ->className('text-center align-middle'),
 
             Column::computed('action')
+                ->title('Acciones')
                 ->exportable(false)
                 ->printable(false)
                 ->className('text-center align-middle'),
