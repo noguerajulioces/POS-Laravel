@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quotation Details</title>
+    <title>Detalles de la Cotización</title>
     <link rel="stylesheet" href="{{ public_path('b3/bootstrap.min.css') }}">
 </head>
 <body>
@@ -15,14 +15,14 @@
             <div style="text-align: center;margin-bottom: 25px;">
                 <img width="180" src="{{ public_path('images/logo-dark.png') }}" alt="Logo">
                 <h4 style="margin-bottom: 20px;">
-                    <span>Reference::</span> <strong>{{ $quotation->reference }}</strong>
+                    <span>Referencia:</span> <strong>{{ $quotation->reference }}</strong>
                 </h4>
             </div>
             <div class="card">
                 <div class="card-body">
                     <div class="row mb-4">
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Company Info:</h4>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Información de la Empresa:</h4>
                             <div><strong>{{ settings()->company_name }}</strong></div>
                             <div>{{ settings()->company_address }}</div>
                             <div>Email: {{ settings()->company_email }}</div>
@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Customer Info:</h4>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Información del Cliente:</h4>
                             <div><strong>{{ $customer->customer_name }}</strong></div>
                             <div>{{ $customer->address }}</div>
                             <div>Email: {{ $customer->customer_email }}</div>
@@ -38,14 +38,14 @@
                         </div>
 
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Invoice Info:</h4>
-                            <div>Invoice: <strong>INV/{{ $quotation->reference }}</strong></div>
-                            <div>Date: {{ \Carbon\Carbon::parse($quotation->date)->format('d M, Y') }}</div>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Recibo:</h4>
+                            <div>Recibo: <strong>INV/{{ $quotation->reference }}</strong></div>
+                            <div>Fecha: {{ \Carbon\Carbon::parse($quotation->date)->format('d M, Y') }}</div>
                             <div>
-                                Status: <strong>{{ $quotation->status }}</strong>
+                                Estado: <strong>{{ $quotation->status }}</strong>
                             </div>
                             <div>
-                                Payment Status: <strong>{{ $quotation->payment_status }}</strong>
+                                Estado de Pago: <strong>{{ $quotation->payment_status }}</strong>
                             </div>
                         </div>
 
@@ -55,12 +55,12 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th class="align-middle">Product</th>
-                                <th class="align-middle">Net Unit Price</th>
-                                <th class="align-middle">Quantity</th>
-                                <th class="align-middle">Discount</th>
-                                <th class="align-middle">Tax</th>
-                                <th class="align-middle">Sub Total</th>
+                                <th class="align-middle">Producto</th>
+                                <th class="align-middle">Precio Neto Unitario</th>
+                                <th class="align-middle">Cantidad</th>
+                                <th class="align-middle">Descuento</th>
+                                <th class="align-middle">Impuesto</th>
+                                <th class="align-middle">Subtotal</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -100,19 +100,19 @@
                             <table class="table">
                                 <tbody>
                                 <tr>
-                                    <td class="left"><strong>Discount ({{ $quotation->discount_percentage }}%)</strong></td>
+                                    <td class="left"><strong>Descuento ({{ $quotation->discount_percentage }}%)</strong></td>
                                     <td class="right">{{ format_currency($quotation->discount_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Tax ({{ $quotation->tax_percentage }}%)</strong></td>
+                                    <td class="left"><strong>Impuesto ({{ $quotation->tax_percentage }}%)</strong></td>
                                     <td class="right">{{ format_currency($quotation->tax_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Shipping)</strong></td>
+                                    <td class="left"><strong>Envío</strong></td>
                                     <td class="right">{{ format_currency($quotation->shipping_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Grand Total</strong></td>
+                                    <td class="left"><strong>TOTAL</strong></td>
                                     <td class="right"><strong>{{ format_currency($quotation->total_amount) }}</strong></td>
                                 </tr>
                                 </tbody>
