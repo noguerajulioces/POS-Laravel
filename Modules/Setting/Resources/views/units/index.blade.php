@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Units')
+@section('title', 'Unidades')
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
@@ -10,7 +10,7 @@
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item active">Units</li>
+        <li class="breadcrumb-item active">Unidades</li>
     </ol>
 @endsection
 
@@ -21,7 +21,7 @@
                 <div class="card border-0 shadow-sm">
                     <div class="card-body">
                         <a href="{{ route('units.create') }}" class="btn btn-primary">
-                            Add Unit <i class="bi bi-plus"></i>
+                            Agregar Unidad <i class="bi bi-plus"></i>
                         </a>
 
                         <hr>
@@ -30,12 +30,12 @@
                             <table class="table table-bordered mb-0 text-center" id="data-table">
                                 <thead>
                                 <tr>
-                                    <th class="align-middle">No.</th>
-                                    <th class="align-middle">Name</th>
-                                    <th class="align-middle">Short Name</th>
-                                    <th class="align-middle">Operator</th>
-                                    <th class="align-middle">Operation Value</th>
-                                    <th class="align-middle">Action</th>
+                                    <th class="align-middle">N.º</th>
+                                    <th class="align-middle">Nombre</th>
+                                    <th class="align-middle">Nombre Corto</th>
+                                    <th class="align-middle">Operador</th>
+                                    <th class="align-middle">Valor de Operación</th>
+                                    <th class="align-middle">Acción</th>
                                 </tr>
                                 </thead>
                                 <tbody>
