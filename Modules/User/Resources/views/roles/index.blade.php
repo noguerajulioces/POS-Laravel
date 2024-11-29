@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Roles & Permissions')
+@section('title', 'Roles & Permisos')
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
@@ -21,7 +21,7 @@
                     <div class="card-body">
                         <!-- Button trigger modal -->
                         <a href="{{ route('roles.create') }}" class="btn btn-primary">
-                            Add Role <i class="bi bi-plus"></i>
+                            Agregar Role <i class="bi bi-plus"></i>
                         </a>
 
                         <hr>

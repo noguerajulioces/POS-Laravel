@@ -25,9 +25,9 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label>Customer</label>
+                                    <label>Cliente</label>
                                     <select wire:model="customer_id" class="form-control" name="customer_id">
-                                        <option value="">Select Customer</option>
+                                        <option value="">Selecionar</option>
                                         @foreach($customers as $customer)
                                             <option value="{{ $customer->id }}">{{ $customer->customer_name }}</option>
                                         @endforeach
