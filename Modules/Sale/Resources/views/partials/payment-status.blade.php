@@ -1,10 +1,10 @@
-@if ($data->payment_status == 'Parcial')
+@if ($data->payment_status == 'Partial')
     <span class="badge badge-warning">
-        {{ $data->payment_status }}
+        Parcial
     </span>
-@elseif ($data->payment_status == 'Pagado')
+@elseif ($data->payment_status == 'Paid')
     <span class="badge badge-success">
-        {{ $data->payment_status }}
+        Pagado
     </span>
 @else
     <span class="badge badge-danger">
