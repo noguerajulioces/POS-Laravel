@@ -8,6 +8,6 @@
     </span>
 @else
     <span class="badge badge-danger">
-        {{ $data->payment_status }}
+        No pagado
     </span>
 @endif
