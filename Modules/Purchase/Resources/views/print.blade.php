@@ -22,30 +22,30 @@
                 <div class="card-body">
                     <div class="row mb-4">
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Company Info:</h4>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Información de la Empresa:</h4>
                             <div><strong>{{ settings()->company_name }}</strong></div>
                             <div>{{ settings()->company_address }}</div>
                             <div>Email: {{ settings()->company_email }}</div>
-                            <div>Phone: {{ settings()->company_phone }}</div>
+                            <div>Teléfono: {{ settings()->company_phone }}</div>
                         </div>
 
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Supplier Info:</h4>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Información del proveedor:</h4>
                             <div><strong>{{ $supplier->supplier_name }}</strong></div>
                             <div>{{ $supplier->address }}</div>
                             <div>Email: {{ $supplier->supplier_email }}</div>
-                            <div>Phone: {{ $supplier->supplier_phone }}</div>
+                            <div>Teléfono: {{ $supplier->supplier_phone }}</div>
                         </div>
 
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Invoice Info:</h4>
-                            <div>Invoice: <strong>INV/{{ $purchase->reference }}</strong></div>
-                            <div>Date: {{ \Carbon\Carbon::parse($purchase->date)->format('d M, Y') }}</div>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Información del Recibo:</h4>
+                            <div>Recibo: <strong>INV/{{ $purchase->reference }}</strong></div>
+                            <div>Fecha: {{ \Carbon\Carbon::parse($purchase->date)->format('d M, Y') }}</div>
                             <div>
-                                Status: <strong>{{ $purchase->status }}</strong>
+                                Estado: <strong>{{ $purchase->status }}</strong>
                             </div>
                             <div>
-                                Payment Status: <strong>{{ $purchase->payment_status }}</strong>
+                                Estado de pago: <strong>{{ $purchase->payment_status }}</strong>
                             </div>
                         </div>
 
@@ -55,12 +55,12 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th class="align-middle">Product</th>
-                                <th class="align-middle">Net Unit Price</th>
-                                <th class="align-middle">Quantity</th>
-                                <th class="align-middle">Discount</th>
-                                <th class="align-middle">Tax</th>
-                                <th class="align-middle">Sub Total</th>
+                                <th class="align-middle">Producto</th>
+                                <th class="align-middle">Precio Neto Unitario</th>
+                                <th class="align-middle">Cantidad</th>
+                                <th class="align-middle">Descuento</th>
+                                <th class="align-middle">Impuesto</th>
+                                <th class="align-middle">Subtotal</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -100,19 +100,19 @@
                             <table class="table">
                                 <tbody>
                                 <tr>
-                                    <td class="left"><strong>Discount ({{ $purchase->discount_percentage }}%)</strong></td>
+                                    <td class="left"><strong>Descuento ({{ $purchase->discount_percentage }}%)</strong></td>
                                     <td class="right">{{ format_currency($purchase->discount_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Tax ({{ $purchase->tax_percentage }}%)</strong></td>
+                                    <td class="left"><strong>Impuesto ({{ $purchase->tax_percentage }}%)</strong></td>
                                     <td class="right">{{ format_currency($purchase->tax_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Shipping)</strong></td>
+                                    <td class="left"><strong>Envío</strong></td>
                                     <td class="right">{{ format_currency($purchase->shipping_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Grand Total</strong></td>
+                                    <td class="left"><strong>Total</strong></td>
                                     <td class="right"><strong>{{ format_currency($purchase->total_amount) }}</strong></td>
                                 </tr>
                                 </tbody>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Purchase Returns')
+@section('title', 'Devoluciones de compras')
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                         <a href="{{ route('purchase-returns.create') }}" class="btn btn-primary">
-                            Add Purchase Return <i class="bi bi-plus"></i>
+                            Agregar devolución de compra <i class="bi bi-plus"></i>
                         </a>
 
                         <hr>
